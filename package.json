@@ -1,6 +1,6 @@
 {
     "name": "@fuzzco/smart-columns",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Columns using display: grid and CSS vars.",
     "main": "dist/smart-columns.cjs.js",
     "module": "dist/smart-columns.esm.js",
@@ -16,7 +16,7 @@
         "grid",
         "column"
     ],
-    "author": "Sander Moolin",
+    "author": "Sander Moolin, Fuzzco",
     "license": "MIT",
     "devDependencies": {
         "@ampproject/rollup-plugin-closure-compiler": "^0.10.0",

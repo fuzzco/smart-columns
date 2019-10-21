@@ -33,7 +33,7 @@ with CSS like this:
 
 1. In your HTML:
     ```
-    <script src="//unpkg.com/smart-columns"></script>
+    <script src="//unpkg.com/@fuzzco/smart-columns"></script>
     <script type="text/javascript">
         smartColumns()
     </script>
