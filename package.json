@@ -1,5 +1,5 @@
 {
-    "name": "smart-columns",
+    "name": "@fuzzco/smart-columns",
     "version": "1.0.0",
     "description": "Columns using display: grid and CSS vars.",
     "main": "dist/smart-columns.cjs.js",
