@@ -11,11 +11,38 @@
             <li>Item</li>
             <li>Item</li>
             <li>Item</li>
+            <li>Item</li>
+            <li>Item</li>
+        </ol>
+
+        <hr />
+
+        <ol>
+            <li>Item</li>
+            <li>Item</li>
+            <li>Item</li>
+            <li>Item</li>
+            <li>Item</li>
         </ol>
 
         <script src="smart-columns.umd.js"></script>
         <script type="text/javascript">
             smartColumns()
         </script>
+
+        <style>
+            ol {
+                display: grid;
+                grid-template-rows: repeat(var(--row-count), auto);
+                grid-auto-flow: column;
+
+                grid-template-columns: 1fr 1fr;
+                grid-column-gap: 40px;
+            }
+            li {
+                background: #dedede;
+                margin: 2px;
+            }
+        </style>
     </body>
 </html>

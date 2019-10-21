@@ -1,26 +1,30 @@
 {
-    "name": "@fuzzco/module-base",
+    "name": "smart-columns",
     "version": "1.0.0",
-    "description": "Boilerplate for a Fuzzco JS module.",
+    "description": "Columns using display: grid and CSS vars.",
     "main": "dist/smart-columns.cjs.js",
     "module": "dist/smart-columns.esm.js",
     "browser": "dist/smart-columns.umd.js",
     "scripts": {
         "dev": "rollup -c -w",
-        "build": "NODE_ENV=production && webpack",
+        "build": "NODE_ENV=production rollup -c",
         "prepublish": "npm run build"
     },
-    "repository": "https://github.com/fuzzco/module-base",
-    "keywords": [],
-    "author": "",
+    "repository": "https://github.com/safrmo/smart-columns",
+    "keywords": [
+        "css",
+        "grid",
+        "column"
+    ],
+    "author": "Sander Moolin",
     "license": "MIT",
     "devDependencies": {
         "@ampproject/rollup-plugin-closure-compiler": "^0.10.0",
         "@babel/core": "^7.6.4",
-        "concurrently": "^5.0.0",
         "rollup": "^1.25.1",
         "rollup-plugin-babel": "^4.3.3",
         "rollup-plugin-livereload": "^1.0.4",
-        "rollup-plugin-serve": "^1.0.1"
+        "rollup-plugin-serve": "^1.0.1",
+        "rollup-plugin-terser": "^5.1.2"
     }
 }

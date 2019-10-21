@@ -3,6 +3,7 @@ import closure from '@ampproject/rollup-plugin-closure-compiler'
 import pkg from './package.json'
 import serve from 'rollup-plugin-serve'
 import livereload from 'rollup-plugin-livereload'
+import { terser } from 'rollup-plugin-terser'
 
 export default process.env.NODE_ENV == 'production'
     ? [
@@ -17,7 +18,7 @@ export default process.env.NODE_ENV == 'production'
                   { name: 'smartColumns', file: pkg.browser, format: 'umd' },
                   { file: pkg.main, format: 'cjs' }
               ],
-              plugins: [babel(), closure()]
+              plugins: [babel(), closure(), terser()]
           }
       ]
     : [
