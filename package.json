@@ -2,9 +2,11 @@
     "name": "@fuzzco/module-base",
     "version": "1.0.0",
     "description": "Boilerplate for a Fuzzco JS module.",
-    "main": "dist/index.js",
+    "main": "dist/smart-columns.cjs.js",
+    "module": "dist/smart-columns.esm.js",
+    "browser": "dist/smart-columns.umd.js",
     "scripts": {
-        "dev": "parcel demo/index.html",
+        "dev": "rollup -c -w",
         "build": "NODE_ENV=production && webpack",
         "prepublish": "npm run build"
     },
@@ -13,6 +15,12 @@
     "author": "",
     "license": "MIT",
     "devDependencies": {
-        "parcel-bundler": "^1.12.4"
+        "@ampproject/rollup-plugin-closure-compiler": "^0.10.0",
+        "@babel/core": "^7.6.4",
+        "concurrently": "^5.0.0",
+        "rollup": "^1.25.1",
+        "rollup-plugin-babel": "^4.3.3",
+        "rollup-plugin-livereload": "^1.0.4",
+        "rollup-plugin-serve": "^1.0.1"
     }
 }
